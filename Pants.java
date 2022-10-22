@@ -7,13 +7,19 @@
 public class Pants {
 
     /*
-     * TODO: Modify this method to print ASCII Art Pants
+     * Prints ASCII Art pants (I drew them!)
      */
     public void display() {
-        System.out.println("Pants?);
+        System.out.println("        ============");
+        System.out.println("       |||||||o||||||");
+        System.out.println("       /      |.    \\");
+        System.out.println("      /       |.     \\");
+        System.out.println("     /        |.      \\");
+        System.out.println("    |         |         |");
+        System.out.println("    |________/\\________|");                          
     }
-
-    /* main method (for testing) */
+ 
+        /* main method (for testing) */
     public static void main(String[] args) {
         Pants myPants = new Pants();
         myPants.display();
