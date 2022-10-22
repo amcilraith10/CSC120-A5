@@ -14,18 +14,17 @@ public class Boot {
     }
 
     /*
-     * TODO: Modify this method to print ASCII Art Boot
+     * Prints mirrored ASCII Art boots
      */
     public void display() {
         if (this.direction.equals("left")) {
-          System.out.println("Left boot?");
+          System.out.print("      |____T");
         } else if (this.direction.equals("right")) {
-          System.out.println("Right boot?");
+          System.out.print("  T____|");
         } else {
           System.out.println("Which boot?");
         }
     }
-
     /* main method (for testing) */
     public static void main(String[] args) {
         Boot myLeftBoot = new Boot("left");

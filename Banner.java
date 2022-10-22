@@ -4,10 +4,17 @@
  * @author R. Jordan Crouser + CSC120 (Fall '22))
  * @version 13 October 2022
  */
+import java.util.Scanner; 
+
 public class Banner {
-    
-    /* Message to print on Banner */
     private String message;
+
+    /* Message to print on Banner */
+    public static void printThisBannerPleaseGod(){
+        Scanner message = new Scanner(System.in);
+        System.out.println("Enter banner message: ");
+        message.close();
+    }
 
     /* Constructor */
     public Banner(String m) {
@@ -15,15 +22,19 @@ public class Banner {
     }
 
     /*
-     * TODO: Modify this method to print a decorative banner, resized to fit the message
+     * Prints a decorative banner
      */
     public void display() {
-        System.out.println(this.message);
+        System.out.println("⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘");
+        System.out.println("⚘⚘⚘  " + this.message + "   ⚘⚘⚘");
+        System.out.println("⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘⚘");
+    
     }
 
     /* main method (for testing) */
     public static void main(String[] args) {
-        Banner myBanner = new Banner("Hello world");
+        printThisBannerPleaseGod();
+        Banner myBanner = new Banner("Happy fall, Smithies!");
         myBanner.display();
     }
 }
